@@ -1,0 +1,269 @@
+body {
+    background-color: hsl(234, 29%, 20%);
+}
+
+.main {
+    background-color: white;
+    height: 61vh;
+    width: 48%;
+    border-radius: 5%;
+    margin-left: 25%;
+    font-family: roboto;
+    margin-top: 30vh;
+}
+
+.main h1 {
+    font-weight: 700;
+}
+
+.main h1,
+p {
+    margin-left: 4%;
+}
+
+.mainHeading {
+    padding-top: 100px;
+
+}
+
+.main p {
+    font-size: 16px;
+}
+
+.mainPoints {
+    list-style-type: none;
+
+}
+
+.singlePoint {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.singlePoint li {
+    margin-left: 1rem;
+    font-size: 16px;
+}
+
+.mainDesktopImage {
+    height: 58vh;
+    position: absolute;
+    margin-left: 520px;
+    bottom: 95px;
+    /* margin-top: -293px; */
+}
+
+.mainMobileImage {
+    display: none;
+}
+
+.emailBox p {
+    font-weight: 700;
+    /* margin-left: 4%; */
+}
+
+.emailBox input {
+    margin-left: 4%;
+    height: 40px;
+    width: 340px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.subscribeButton {
+    margin-left: 4%;
+    margin-top: 4%;
+    height: 50px;
+    width: 350px;
+    border-radius: 4px;
+    font-weight: 700;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.subBtn:hover {
+    background-image: linear-gradient(240deg, rgb(228, 62, 2), rgb(255, 98, 124));
+    border: none;
+    box-shadow: 0 5px 15px rgb(228, 62, 2);
+}
+
+#emailInput::placeholder {
+    padding-left: 20px;
+}
+
+.placeholderColor::placeholder {
+    opacity: 0;
+}
+
+.emailValueColorChange {
+    color: hsl(4, 100%, 67%);
+}
+
+.emailText {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailErrorText {
+    margin-top: -36px;
+    margin-left: 280px;
+    color: hsl(4, 100%, 67%);
+    opacity: 0;
+}
+
+.successState {
+    display: none;
+    background-color: white;
+    height: 55vh;
+    width: 25%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+.successState img {
+    padding-left: 10%;
+    padding-top: 7%;
+}
+
+.successMainHeading {
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: roboto;
+    padding-left: 10%;
+}
+
+.emailSentPara {
+    color: black;
+    font-size: 16px;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: roboto;
+}
+
+.dismissButton {
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    margin-left: 13%;
+    margin-top: 6%;
+    height: 50px;
+    width: 350px;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.dismissButton:hover {
+    background-image: linear-gradient(240deg, rgb(228, 62, 2), rgb(255, 98, 124));
+    border: none;
+    box-shadow: 0 5px 15px rgb(228, 62, 2);
+}
+
+@media (max-width: 375px) and (max-height: 922px) {
+    body {
+        background-color: white;
+        background-image: url("illustration-sign-up-desktop");
+    }
+
+    .main {
+        background-color: white;
+        /* height: 61vh;
+        width: 48%; */
+        margin-left: 0;
+        font-family: roboto;
+        margin-top: 0;
+    }
+
+    .mainDesktopImage {
+        display: none;
+    }
+
+    .mainMobileImage {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-bottom: 4px;
+    }
+
+
+    .mainHeading {
+        position: absolute;
+        top: 170px;
+
+    }
+
+    .firstPara {
+        position: absolute;
+        top: 340px;
+    }
+
+    ul {
+        position: absolute;
+        top: 400px;
+        right: 26px;
+        margin-left: -16px;
+    }
+
+    .emailBox {
+        position: absolute;
+        top: 650px;
+        right: 20px;
+    }
+
+    .subscribeButton {
+        position: absolute;
+        top: 770px;
+        right: 12px;
+    }
+
+    .emailBox p {
+        font-weight: 700;
+    }
+
+    .successState {
+        display: none;
+        background-color: white;
+    }
+
+    .successState img {
+        position: absolute;
+        left: -12px;
+        top: 160px;
+    }
+
+    .successMainHeading {
+        font-weight: 700;
+        font-size: 3rem;
+        font-family: roboto;
+        position: absolute;
+        left: -12px;
+
+    }
+
+    .emailSentPara {
+        color: black;
+        font-size: 16px;
+        font-family: roboto;
+        position: absolute;
+        left: -12px;
+        top: 450px;
+    }
+
+    .dismissButton {
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        border-radius: 7px;
+        font-weight: 700;
+        cursor: pointer;
+        border: 2px solid black;
+        position: absolute;
+        left: -36px;
+        bottom: 40px;
+
+    }
+}
